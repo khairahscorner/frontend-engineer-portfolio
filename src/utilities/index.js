@@ -5,8 +5,8 @@ export const screens = {
 }
 
 export const colors = {
-    "color-highlight": "#ce9798",
-    "color-highlight-dark": "#a57374",
-    "color-secondary": "#838383",
+    "color-primary": "#4e3635",
     "color-light": "#fffdfd",
+    "color-dark": "#353535",
+    "color-secondary": "#838383",
 }

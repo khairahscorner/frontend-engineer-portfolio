@@ -7,12 +7,15 @@ export const HeaderWrapper = styled.header`
     width: 100%;
     top: -1px;
     z-index: 100;
-    padding: 10px 20px;
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: ${colors['color-light']};
     box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 10px;
+    @media ${screens.mobileL} {
+        padding: 10px 15px;
+    }
     .nav-wrapper {
         position: relative;
     }
@@ -20,26 +23,28 @@ export const HeaderWrapper = styled.header`
         display:flex;
         width: 80px;
         height: auto;
-        margin: -10px 0;
+        margin: -10px 0 -10px -10px;
         img {
             max-width: 100%;
             @media ${screens.mobileL} {
-                max-width:85%;
+                max-width: 85%;
             }
         }
     }
     .resume-text {
-        color: ${colors['color-secondary']};
+        color: ${colors['color-primary']};
+        cursor: pointer;
             @media ${screens.mobileL} {
                 display: none
             }
     }
     .resume-icon {
         display: none;
+        cursor: pointer;
         svg {
             object-fit: contain;
             path {
-                fill: ${colors['color-highlight-dark']};
+                fill: ${colors['color-primary']};
             }
         }
         @media ${screens.mobileL} {
@@ -67,30 +72,14 @@ export const FooterWrapper = styled.footer`
         }
     }
     .credit {      
-        color: ${colors['color-secondary']};
+        color: ${colors['color-primary']};
         padding: 20px 0 50px;
         width: 100%;
         text-align: center;
         letter-spacing: 1px;
     }
 `
-export const IconWrapper = styled.div`
-    display: flex;
-    width: 70%;
-    padding: 20px 0 30px;
-    align-items: center;
-    .icon {
-        margin-right: 20px;
-        a {
-            transition: transform 0.5s ease;
-            &:hover {
-                svg {
-                    transform: scale(1.2);
-                }
-            }
-        }
-    }
-`
+
 export const ButtonWrapper = styled.button`
     padding: 10px 20px;
     background-color: ${red};
@@ -107,229 +96,131 @@ export const ButtonWrapper = styled.button`
 `
 
 export const MainWrapper = styled.main`
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 50px 0;
     min-height: 100vh;
-    @media ${screens.mobileL} {
-        width: 100%; 
+    .inner-content {
+        width: 80%;
+        margin: 0 auto;
+        @media ${screens.mobileL} {
+            width: 90%;
+        }
+    }
+    .inner-padding {
+        padding: 7% 0;
+        @media ${screens.mobileL} {
+            padding: 15% 0;
+        }
     }
     .first-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 30px;
-        border-bottom: 1px solid #777777;
-    }
-    .heading {
-        font-size: 36px; 
-        text-align: center;
-    }
-    .sub {
-        font-size: 28px;
-        @media ${screens.mobileL} {
-            font-size: 20px; 
+        height: 80vh;
+        background-color: ${colors['color-light']};
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 15% 0;
+            justify-content: center;
+            @media ${screens.mobileL} {
+                padding: 25% 0;
+             }
         }
-    }
-    .span {          
-        font-style: italic;
-    }
-    .logo {
-        width: 30%;
-        height: auto;
-        margin: 50px 0;
-        img {
-            width: 100%;
-            object-fit: contain;
+        .intro-heading {
+            font-size: 5rem;
+            margin-bottom: 25px;
+            @media ${screens.mobileL} {
+               font-size: 3rem;
+               margin-bottom: 15px;
+            }
         }
-        @media ${screens.mobileL} {
+        .intro-desc {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            @media ${screens.mobileL} {
+                font-size: 1rem;
+             }
+        }
+        .separator {
+            width: 50px;
+            height: 1px;
+            border-bottom: 1.5px solid ${colors["color-primary"]};
+        }
+        .social-icons {
+            display: flex;
             width: 70%;
+            align-items: center;
+            margin-top: 15px;
+            .icon {
+                width: 20px;
+                height: 20px;
+                margin-right: 15px;
+                a {
+                    transition: transform 0.5s ease;
+                    svg {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover {
+                        svg {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
         }
     }
-    .quote {
-        font-style: italic;
-        font-size: 30px;
-        color: #282828;
+    .intro-heading {
+        font-size: 5rem;
+        margin-bottom: 25px;
         @media ${screens.mobileL} {
-            font-size: 20px; 
+           font-size: 3rem;
         }
     }
-    .about {
-        margin: 30px auto;
-        width: 45%;
-        text-align: center;
-        line-height: 36px;
-        font-weight: 600;
+    .section-heading {
+        font-size: 3rem;
+        margin-bottom: 40px;
         @media ${screens.mobileL} {
-            width: 80%;
+            font-size: 2rem;
         }
     }
     .second-section {
-        margin: 70px 0 50px;
-        text-align: center;
+        background-color: ${colors['color-primary']};
+        color: ${colors["color-light"]};
     }
-    .bio-image {
-        position: relative;
-        width: 100%;
-        img {
-            width: 100%;
-            object-fit: contain;
+    .section-wrapper {
+        margin-bottom: 10%;
+        @media ${screens.mobileL} {
+            margin-bottom: 20%;
         }
     }
     .bio {
         width: 90%;
-        margin: 60px auto 20px;
-        font-weight: 600;
-        line-height: 32px;
         p {
-            padding: 10px 0;
+            margin-bottom: 10px;
+            line-height: 2rem;
         }
-    }
-    .source {
-        font-style: italic;
-        font-weight: 400;
-        text-decoration: underline;
-        color: ${red};
-    }
-    .section {
-        padding: 50px 0;
-    }
-    .section-heading {
-        font-size: 32px;
-        margin-bottom: 60px;
-        text-align: center;
-        text-transform: uppercase;
         @media ${screens.mobileL} {
-            font-size: 28px;
+            width: 100%;
         }
     }
-    .loading {
-        padding: 100px;
-        font-size: 40px;
-        text-align: center;
-        font-weight: 600;
-    }
-    .flex-row {
+    .tools {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        @media ${screens.mobileL} {
-            justify-content: center;
-        }
-        .member {
-            width: 24%;
-        }
-        .flex-group {
-            width: 30%;
-        }
-        .flex-group, .member {         
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        .item {
+            margin-bottom: 20px;
+            width: 80%;
             @media ${screens.mobileL} {
-                width 80%;
-            }
-        }
-        .img-box {
-            position: relative;
-            width: 100%;
-            img {
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
+            }
+            .type {
+                font-weight: 600;
+                margin-right: 15px;
+            }
+            .list {
+                font-style: italic;
             }
         }
-        .img-group {
-            position: relative;
-            border: 1px solid transparent;
-            width: 48%;
-            margin-bottom: 60px;
-            transition: transform 1s ease;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            &:hover {
-                border: 1px solid ${red};
-                transform: scale(1.02);
-            }
-            @media ${screens.mobileL} {
-                width 80%;
-            }
-        }
-    }
-    .text {
-        margin-top: 10px;
-        span {
-            font-weight: 700;
-        }
-    }
-    .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            .btn {
-                margin-left: 30px;
-                cursor: pointer;
-                transition: all 0.5s ease;
-                outline: transparent;
-                margin-top: 10px;
-            }
-            .toggle {
-                transform: rotate(180deg);
-            }
-        }
-    .reduced {
-        width: 80%;
-        margin-top: 30px;
-    }
-    .song-section {
-        text-align: center;
-        width: 70%;
-        margin: 50px auto;
-        @media ${screens.tablet} {
-            width 90%;
-        }
-        .video-player {
-            width: 100%;
-            height: 500px;
-            display: flex;
-            padding: 10px 0;
-            border: 1px solid #282828;
-            margin-bottom: 30px;
-            .video {
-                width: 95%;
-                height: 100%;
-                margin: 0 auto;
-            }
-            @media ${screens.mobileSm} {
-                height: 300px;
-                padding: 0;
-                border: none;
-                .video {
-                    width: 100%;
-                }
-            }
-        }
-        .category {
-            font-size: 24px;
-            @media ${screens.mobileL} {
-                font-size: 18px;
-            }
-        }
-    }
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color: #f7f7f7;
-        height: 50px;
-        z-index: -1;
-    }
-    .btn {
-        text-align: center;
     }
 `
