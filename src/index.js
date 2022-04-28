@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import './assets/fonts/Gropled-Bold.otf';
+import "./assets/css/slick.css"; 
+import "./assets/css/slick-theme.css"; 
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
