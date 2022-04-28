@@ -124,6 +124,9 @@ export const MainWrapper = styled.main`
     @media ${screens.mobileL} {
       padding: 25% 0;
     }
+    @media ${screens.mobileSm} {
+      padding: 30% 0;
+    }
   }
   .intro-heading {
     font-size: 5rem;
@@ -158,6 +161,10 @@ export const MainWrapper = styled.main`
         padding: 9px;
         border: transparent;
         border-radius: 50%;
+        @media ${screens.mobileL} {
+          height: 25px;
+          padding: 2px;
+        }
     }
     .icon {
       width: 20px;
