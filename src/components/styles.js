@@ -263,20 +263,31 @@ export const MainWrapper = styled.main`
     border-radius: 10px;
     padding: 30px;
     .btn {
-        margin-left: 30px;
-        cursor: pointer;
-        transition: all 0.5s ease;
-        outline: transparent;
+      margin-left: 30px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      outline: transparent;
+      display: flex;
+      align-items: center;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
     }
     .toggle {
         transform: rotate(180deg);
     }
+    @media ${screens.mobileL} {
+      padding: 20px 15px;
+    }
   }
   .text {
-    margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
-}
+    @media ${screens.mobileL} {
+      font-size: 1rem;
+    }
+  }
 .mb-20 {
     margin-bottom: 30px;
 }

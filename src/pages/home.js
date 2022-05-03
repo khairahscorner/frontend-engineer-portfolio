@@ -122,9 +122,19 @@ const projects = [
     mark: "filter"
   },
   {
+    name: "GitHub Repos",
+    url: "https://githubgraphql.netlify.app/",
+    mark: "graphql"
+  },
+  {
     name: "MePaint",
     url: "https://mepaint.netlify.app",
     mark: "meyer"
+  },
+  {
+    name: "This Portfolio",
+    url: "#",
+    mark: "portfolio"
   },
 ]
 
@@ -192,7 +202,7 @@ const Home = () => {
           <div className="intro">
             <h1 className="intro-heading">Hi, I'm Airah Yusuff.</h1>
             <p className="intro-desc">
-              Frontend Engineer &#x2022; Occasional Writer
+              Frontend Engineer &#x2022; Technical Writer
             </p>
             <div className="separator"></div>
             <div className="social-icons">
@@ -264,7 +274,7 @@ const Home = () => {
             </div>
             <div>
               <h2 className="section-heading">Tools I Use.</h2>
-                <div class="container">
+                <div className="container">
                 <Slider {...settings}>
                       {tools.map((item, index) => (
                         <div className="each-slide" key={`tool-${index}`} style={{width: "150px"}}>
@@ -294,7 +304,7 @@ const Home = () => {
                         <div className="text">
                           {project.name}
                         </div>
-                        <a className="btn" href={project.url}> 
+                        <a className="btn" href={project.url} target="_blank" rel="noreferrer"> 
                           <WebIcon />
                         </a>
                       </div>
