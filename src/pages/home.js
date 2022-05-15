@@ -375,7 +375,7 @@ const Home = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.gopicky.com/khairahscorner"
+                  href="https://www.gopicky.com/skincarebiased"
                 >
                   <PickyIcon />
                 </a>
