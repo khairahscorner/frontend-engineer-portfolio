@@ -5,4 +5,4 @@ An "official" documentation of my developer journey.
 ## Deployed to Two Platforms
 
 - Netlify: https://airahyusuff.netlify.app
-- AWS S3: http://airah-yusuff-portfolio.s3-website-us-east-1.amazonaws.com/
+- AWS CloudFront via S3 bucket: https://d3lmalro7uroit.cloudfront.net
