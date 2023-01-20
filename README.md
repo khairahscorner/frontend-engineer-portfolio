@@ -1,6 +1,6 @@
 # My Portfolio
 
-An "official" documentation of my developer journey.
+An "official" documentation of my frontend developer journey.
 
 ## Deployed to Two Platforms
 
