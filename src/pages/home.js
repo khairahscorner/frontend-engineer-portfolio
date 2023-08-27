@@ -17,11 +17,8 @@ import { ReactComponent as HashnodeIcon } from "../assets/hashnode.svg";
 import { ReactComponent as StackOverflowIcon } from "../assets/stack-overflow.svg";
 import { ReactComponent as EmailIcon } from "../assets/email.svg";
 import {ReactComponent as WebIcon} from '../assets/web.svg';
-import {ReactComponent as YTIcon} from '../assets/youtube.svg';
 import {ReactComponent as IGIcon} from '../assets/instagram.svg';
 import {ReactComponent as QuoraIcon} from '../assets/quora.svg';
-import {ReactComponent as PinterestIcon} from '../assets/pinterest.svg';
-import {ReactComponent as PickyIcon} from '../assets/picky.svg';
 import {tools, projects, settings} from "../components/resources";
 import resume from '../assets/airahyusuff.pdf';
 
