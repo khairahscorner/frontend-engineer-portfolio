@@ -65,19 +65,14 @@ export const tools = [
 
 export const projects = [
     {
-        name: "Callerview Dashboard",
-        url: "https://callerview.netlify.app",
-        mark: "callerview"
+        name: "SNEducate",
+        url: "https://sneducate.netlify.app/",
+        mark: "sneducate"
     },
     {
         name: "AutiMS",
         url: "https://autims.netlify.app",
         mark: "autims"
-    },
-    {
-        name: "Teume project",
-        url: "https://treasureproject.netlify.app",
-        mark: "treasure"
     },
     {
         name: "MCF",
@@ -88,6 +83,16 @@ export const projects = [
         name: "Fitila",
         url: "https://fitila.mentalcare.life",
         mark: "fitila"
+    },
+    {
+        name: "Teume project",
+        url: "https://treasureproject.netlify.app",
+        mark: "treasure"
+    },
+    {
+        name: "Callerview Dashboard",
+        url: "https://callerview.netlify.app",
+        mark: "callerview"
     },
     {
         name: "Filter Pay",
