@@ -33,4 +33,3 @@ jobs:
         run: npm run build
       - name: Deploy
         run: aws s3 sync ./build s3://airah-yusuff-portfolio
-Ï
