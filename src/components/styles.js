@@ -133,6 +133,7 @@ export const MainWrapper = styled.main`
     margin-bottom: 25px;
     @media ${screens.mobileL} {
       font-size: 3rem;
+      line-height: 1.4;
       margin-bottom: 15px;
     }
   }
