@@ -113,7 +113,7 @@ const Home = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="mailto:airahyusuff@gmail.com?subject=From Your Portfolio"
+                  href="mailto:airahyusuff@gmail.com?subject=Reaching Out From Your Portfolio Website"
                 >
                   <EmailIcon />
                 </a>
@@ -127,12 +127,12 @@ const Home = () => {
               <h2 className="section-heading">Brief Intro.</h2>
               <div className="bio">
                 <p>
-                  I'm a software engineer with about 3 years of experience developing
-                  customer-focused solutions with a delightful user
+                  I'm a software engineer with 3+ years of experience developing
+                  user-centered software solutions with a delightful user
                   experience.{" "}
                 </p>
                 <p>
-                  As an avid learner, I thrive in work environments that provide opportunities for career growth and embrace diversity potentials.
+                  As a proactive learner, I thrive in environments that provide opportunities for career growth and embrace diversity potentials.
                 </p>
               </div>
             </div>
@@ -185,7 +185,8 @@ const Home = () => {
               <h2 className="section-heading">Outside of Work.</h2>
               <div className="bio mb-20">
                 <p>
-                I contribute to the AWS Community Builders blog as a Community Builder, and I am also a member of tech communities like She Code Africa, Tech Sisters, etc.
+                I contribute to the AWS Community Builders blog as a Community Builder, and volunteer as a mentor and technical contributor for organisations like Women Who Code and Cherry On Tech.
+                I am also a member of other tech communities like She Code Africa, GTA Black Women in Tech, Code First Girls, Tech Sisters, etc.
                 </p>
                 <p>I also create technical content for my blog and share general helpful tips.
                 </p>
