@@ -70,6 +70,11 @@ export const projects = [
         mark: "sneducate"
     },
     {
+        name: "Save-The-Pony Game",
+        url: "https://tp-challenge.netlify.app/",
+        mark: "trustpilot"
+    },
+    {
         name: "AutiMS",
         url: "https://autims.netlify.app",
         mark: "autims"
